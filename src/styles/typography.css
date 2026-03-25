@@ -1,0 +1,38 @@
+/* Base Typography */
+body {
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    background: #fcfdfd;
+}
+
+/* Heading Typography */
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+/* Paragraph Typography */
+/* Small Text / Labels */
+/* Buttons Typography */
+/* Table Typography */
