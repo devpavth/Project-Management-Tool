@@ -1,0 +1,61 @@
+<div class="card h-full">
+    <div class="flex items-center justify-between">
+        <h2>Production Plan List</h2>
+        <button pButton pRipple type="button" routerLink="/home/production-plan/create">
+            <i pButtonIcon>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <rect width="24" height="24" fill="none" />
+                    <path fill="currentColor" d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2" />
+                </svg>
+            </i>
+            <span pButtonLabel>Create Production Plan</span>
+        </button>
+    </div>
+    <div class="border border-(--surface-border) rounded-lg overflow-hidden mt-2">
+        <p-table [value]="planList" [rowHover]="true" [tableStyle]="{ 'min-width': 'max-content' }">
+            <ng-template #header>
+                <tr>
+                    <th>SL NO</th>
+                    <th>Plan Month</th>
+                    <th>Tower Type</th>
+                    <th>Blade Type</th>
+                    <th>WTG Count</th>
+                    <th>Created On</th>
+                    <th>Created By</th>
+                    <th>Actions</th>
+                </tr>
+            </ng-template>
+            <ng-template #body let-plan let-i="rowIndex">
+                <tr>
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ plan.planMonth }}</td>
+                    <td>{{ plan.towerType }}</td>
+                    <td>{{ plan.bladeType }}</td>
+                    <td>{{ plan.wtgCount }}</td>
+                    <td>{{ plan.createdOn }}</td>
+                    <td>{{ plan.createdBy }}</td>
+                    <td>
+                        <p-menu #menu [model]="items" [popup]="true" appendTo="body">
+                            <ng-template #item let-item>
+                                <div class="flex items-center gap-2 px-3 py-1 cursor-pointer">
+                                    <span [innerHTML]="getSafeSvg(item.svgIcon)"></span>
+                                    <span>{{ item.label }}</span>
+                                </div>
+                            </ng-template>
+                        </p-menu>
+                        <button pButton pRipple text rounded severity="secondary" type="button"
+                            (click)="menu.toggle($event)">
+                            <i pButtonIcon>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="text-gray-500">
+                                    <rect width="24" height="24" fill="none" />
+                                    <path fill="currentColor"
+                                        d="M12 7a2 2 0 1 0-2-2a2 2 0 0 0 2 2m0 10a2 2 0 1 0 2 2a2 2 0 0 0-2-2m0-7a2 2 0 1 0 2 2a2 2 0 0 0-2-2" />
+                                </svg>
+                            </i>
+                        </button>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

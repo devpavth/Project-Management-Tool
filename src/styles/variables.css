@@ -1,0 +1,8 @@
+:root {
+    --font-inter: "Inter",
+        sans-serif;
+    --surface-card: var(--p-content-background);
+    --surface-border: var(--p-content-border-color);
+    --content-border-radius: var(--p-content-border-radius);
+}
+

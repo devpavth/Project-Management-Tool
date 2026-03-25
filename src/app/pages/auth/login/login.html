@@ -1,0 +1,24 @@
+<div class="flex items-center justify-center min-h-screen">
+    <div class="card shadow-sm w-full max-w-md">
+        <div class="flex items-center justify-center gap-2 mb-3">
+            <img src="../../../../assets/img/EnvisionLogo.png" alt="Logo" width="70" />
+            <p class="text-4xl font-semibold">Envision</p>
+        </div>
+        <h2 class="text-center mb-4">Project Management Tool</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="submitLoginForm()">
+            <div class="grid grid-cols-1 gap-2">
+                <div class="grid col-span-1 gap-1">
+                    <p-floatlabel variant="on">
+                        <input type="text" pInputText formControlName="email" id="email" class="w-full" />
+                        <label for="email">Email</label>
+                    </p-floatlabel>
+                </div>
+            </div>
+            <div>
+                <button pButton pRipple type="submit" class="w-full mt-3">
+                    <span pButtonLabel>Login</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
