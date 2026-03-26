@@ -11,8 +11,7 @@ import { CommonModule } from "@angular/common";
         <div class="grid grid-cols-[256px_1fr] min-h-screen relative">
             <app-sidebar />
             <div class="grid grid-rows-[auto_1fr] min-w-0">
-                <div class="backdrop-blur-[10px] sticky top-0 z-40"
-                    style="background: rgba(255,255,255,0.7);">
+                <div class="bg-(--surface-card) backdrop-blur-[10px] sticky top-0 z-40">
                     <app-topbar />
                 </div>
                 <div class="min-w-0">

@@ -68,19 +68,23 @@ export class Menu implements OnInit {
                 `,
                 items: [
                     {
-                        label: 'Component Master',
+                        label: 'Components',
+                        routerLink: ['/home/components']
                     },
                     {
-                        label: 'Plant Master'
+                        label: 'Plants',
+                        routerLink: ['/home/plants']
                     },
                     {
-                        label: 'Tower Type Master'
+                        label: 'Tower Types',
+                        routerLink: ['/home/tower-types']
                     },
                     {
-                        label: 'Blade Type Master' 
+                        label: 'Blade Types',
+                        routerLink: ['/home/blade-types'] 
                     },
                     {
-                        label: 'Project Master'
+                        label: 'Projects'
                     }
                 ]
             }
