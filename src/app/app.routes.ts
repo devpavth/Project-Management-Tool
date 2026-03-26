@@ -5,6 +5,10 @@ import { WtgProduction } from './pages/wtg-production/wtg-production';
 import { ProductionPlan } from './pages/production-plan/production-plan';
 import { ComponentSerial } from './pages/component-serial/component-serial';
 import { ProductionPlanList } from './pages/production-plan-list/production-plan-list';
+import { PlantList } from './pages/masters/plant-list/plant-list';
+import { TowerTypeList } from './pages/masters/tower-type-list/tower-type-list';
+import { BladeTypeList } from './pages/masters/blade-type-list/blade-type-list';
+import { ComponentList } from './pages/masters/component-list/component-list';
 
 export const routes: Routes = [
     {
@@ -35,6 +39,22 @@ export const routes: Routes = [
             {
                 path: 'production-plan', 
                 component: ProductionPlanList
+            },
+            {
+                path: 'plants',
+                component: PlantList
+            },
+            {
+                path: 'tower-types',
+                component: TowerTypeList
+            },
+            {
+                path: 'blade-types',
+                component: BladeTypeList
+            },
+            {
+                path: 'components',
+                component: ComponentList
             }
         ]
     }

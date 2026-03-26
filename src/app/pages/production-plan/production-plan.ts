@@ -23,7 +23,7 @@ export class ProductionPlan {
 
   createWTGGroup(){
     return this.fb.group({
-      towerScope: [false],
+      towerScope: [true],
       towerType: [''],
       bladeType: [''],
       wtgQty: [null]
@@ -32,12 +32,12 @@ export class ProductionPlan {
 
   towerTypeList = [
     {
-      label: 'EN 156_3.3MW',
-      value: 'EN 156_3.3MW'
+      label: '120HH-474T',
+      value: '120HH-474T'
     },
     {
-      label: 'EN 182_5.0MW',
-      value: 'EN 182_5.0MW'
+      label: '140HH-520T',
+      value: '140HH-520T'
     }
   ]
 

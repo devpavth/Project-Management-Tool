@@ -23,7 +23,7 @@ export class Login {
 
       if (this.loginForm.get('email')?.value === 'admin@gmail.com') {
         console.log('allow Navigation');
-        this.router.navigate(['/home']);
+        this.router.navigate(['/home/production-plan']);
       }
     } catch (error) {
       console.log(error);
