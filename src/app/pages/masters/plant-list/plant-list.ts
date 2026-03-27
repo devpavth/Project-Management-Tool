@@ -16,18 +16,22 @@ export class PlantList implements OnInit {
   plants = [
     {
       plantName: 'Plant A',
+      plantManager: 'Sanjay',
       location: 'Chennai'
     },
     {
       plantName: 'Plant B',
+      plantManager: 'Anand',
       location: 'Pune'
     },
     {
       plantName: 'Plant C',
+      plantManager: 'Sivam',
       location: 'Trichy'
     },
     {
       plantName: 'Warehouse',
+      plantManager: 'Kayal',
       location: 'Tuticorin'
     },
   ]
