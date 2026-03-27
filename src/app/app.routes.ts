@@ -9,6 +9,7 @@ import { PlantList } from './pages/masters/plant-list/plant-list';
 import { TowerTypeList } from './pages/masters/tower-type-list/tower-type-list';
 import { BladeTypeList } from './pages/masters/blade-type-list/blade-type-list';
 import { ComponentList } from './pages/masters/component-list/component-list';
+import { ComponentAllocation } from './pages/component-allocation/component-allocation';
 
 export const routes: Routes = [
     {
@@ -55,6 +56,10 @@ export const routes: Routes = [
             {
                 path: 'components',
                 component: ComponentList
+            },
+            {
+                path: 'component-allocation',
+                component: ComponentAllocation
             }
         ]
     }

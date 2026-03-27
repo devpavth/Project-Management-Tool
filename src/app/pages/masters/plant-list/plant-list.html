@@ -10,6 +10,7 @@
                     <th>SL No</th>
                     <th>Plant Name</th>
                     <th>Location</th>
+                    <th>Plant Manager</th>
                     <th>Actions</th>
                 </tr>
             </ng-template>
@@ -18,6 +19,7 @@
                     <td>{{ i + 1 }}</td>
                     <td>{{ plant.plantName }}</td>
                     <td>{{ plant.location }}</td>
+                    <td>{{ plant.plantManager }}</td>
                     <td>
                         <p-menu #menu [model]="items" [popup]="true" appendTo="body">
                             <ng-template #item let-item>
